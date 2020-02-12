@@ -1,0 +1,52 @@
+<¡DOCTYPE  html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>symbol</title>
+        <style type="text/css">
+            .l1{
+                fill:pink;
+            }
+            .l2{
+                fill:blue;
+            }
+            svg{
+                width: 50%;
+                height: 50%;
+                
+            }
+            .st0{fill:#FFFFFF;}
+               
+        </style>
+    </head>
+    
+<body>
+<h1>Hola</h1>
+<p>Hola que tal como estas? Este es un texto falso</p>
+
+<svg style="display:none;">
+<symbol viewBox="0 0 200 200" id="estrella">
+<g>
+	<path d="M33.5,19.89l1.12,2.27l0.23,0.47l0.52,0.08l2.51,0.36l-1.82,1.77l-0.38,0.37l0.09,0.52l0.43,2.5l-2.24-1.18l-0.47-0.24l-0.47,0.24l-2.24,1.18l0.43-2.5l0.09-0.52l-0.38-0.37l-1.82-1.77l2.51-0.36l0.52-0.08l0.23-0.47L33.5,19.89 M33.5,17.63
+		l-2.02,4.09l-4.52,0.66l3.27,3.18l-0.77,4.5l4.04-2.12l4.04,2.12l-0.77-4.5l3.27-3.18l-4.52-0.66L33.5,17.63L33.5,17.63z"/>
+	<path d="M21,1.75c10.61,0,19.25,8.64,19.25,19.25S31.61,40.25,21,40.25S1.75,31.61,1.75,21S10.39,1.75,21,1.75 M21,1
+		C9.95,1,1,9.95,1,21s8.95,20,20,20s20-8.95,20-20S32.05,1,21,1L21,1z"/>
+	<path d="M15,5c0,0,10-1,12,9s-4,14-4,14s-6,7-16,1S3,5,15,5z"/>
+	<polygon class="st0" points="15,6.2 18.76,13.82 27.17,15.05 21.09,20.98 22.52,29.35 15,25.4 7.48,29.35 8.91,20.98 2.83,15.05 11.24,13.82 	"/>
+</g>
+</symbol>
+</svg>
+<svg>
+    <use xlink:href="#estrella" class="l1"/>
+</svg>
+   <svg>
+    <use xlink:href="#estrella" class="l2"/>
+</svg>
+   <svg>
+    <use xlink:href="#estrella" class="l1"/>
+</svg>
+   <svg>
+    <use xlink:href="#estrella" class="l2"/>
+</svg>
+    </body>
+</html>
